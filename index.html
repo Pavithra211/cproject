@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Real Estate App</h1>
+        <nav>
+            <ul>
+                [1:01 pm, 18/5/2024] Pavi:   <li><a href="#" id="login-link">Login</a></li>
+                <li><a href="#" id="register-link">Register</a></li>
+                <li><a href="#" id="properties-link">Properties</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="login-section" class="hidden">
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="login-email">Email:</label>
+                <input type="email" id="login-email" required>
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" required>
+                <button  id = "btn" type="submit">Login</button>
+            </form>
+        </section>
+
+        <section id="register-section" class="hidden">
+            <h2>Register</h2>
+            <form id="register-form">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" required>
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <label for="phone-number">Phone Number:</label>
+                <input type="tel" id="phone-number" required>
+                <label for="user-type">User Type:</label>
+                <select id="user-type" required>
+                    <option value="buyer">Buyer</option>
+                    <option value="seller">Seller</option>
+                </select>
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+                <button  id = "btn"  type="submit" >Register</button>
+            </form>
+        </section>
+
+        <section id="properties-section" class="hidden">
+            <h2>Properties</h2>
+            <div id="property-list"></div>
+        </section>
+
+        <section id="seller-section" class="hidden">
+            <h2>Your Properties</h2>
+            <button id="add-property">Add Property</button>
+            <div id="seller-property-list"></div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
+
